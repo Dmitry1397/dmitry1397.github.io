@@ -12,7 +12,7 @@ myImage.onclick = function () {
 var myButton = document.querySelector("button");
 var myHeading = document.querySelector("h1");
 
-function setUserName () {
+/*function setUserName () {
     var myName = prompt("Please enter your name: ");
     localStorage.setItem("name", myName);
     myHeading.textContent = "Hello, " + myName;
@@ -23,4 +23,4 @@ if (!localStorage.getItem("name")) {
 } else {
     var storedName = localStorage.getItem("name");
     myHeading.textContent = "Hello, " + storedName;
-}
+}*/

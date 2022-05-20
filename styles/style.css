@@ -1,15 +1,15 @@
 html {
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
-    background-color: #ebe5d6;
+    background-color: #ACAD94;
 }
 
 body {
     width: 800px;
-    background-color: #e7eaa8;
+    background-color: #E2E2E2;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
-    border: 5px solid gray;
+    border: 5px solid #D8D4D5;
 }
 
 h1 {
@@ -17,18 +17,37 @@ h1 {
     padding: 20px 0;
     font-size: 60px;
     text-align: center;
-    text-shadow: 2px 1px 1px gray;
+    color: #384D48;
+    text-shadow: 2px 1px 1px #6E7271;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #384D48;
 }
 
 p, li {
     font-size: 20px;
     line-height: 2;
     letter-spacing: 1px;
-    color: #9c8751;
+    color: #384D48;
 }   
 
 img {
     display: block;
     margin: 0 auto;
     max-width: 600px;
+}
+
+footer {
+    text-align: center;
+}
+
+.sights {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
 }
