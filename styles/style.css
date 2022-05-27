@@ -1,15 +1,26 @@
 html {
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
-    background-color: #ACAD94;
+    /*background: rgb(69,105,144);
+    background: linear-gradient(90deg, 
+        rgba(69,105,144,1) 0%,
+        rgba(228,253,225,1) 50%, 
+        rgba(244,91,105,1) 100%);
+    
+    /*background: rgb(17,75,95);
+    background: linear-gradient(90deg, 
+        rgba(17,75,95,1) 0%, 
+        rgba(2,128,144,1) 50%, 
+        rgba(244,91,105,1) 100%);*/
+    background-color: #456990;
 }
 
 body {
     width: 800px;
-    background-color: #E2E2E2;
+    background-color: #E4FDE1;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
-    border: 5px solid #D8D4D5;
+    border-radius: 7em;
 }
 
 h1 {
@@ -17,8 +28,16 @@ h1 {
     padding: 20px 0;
     font-size: 60px;
     text-align: center;
-    color: #384D48;
-    text-shadow: 2px 1px 1px #6E7271;
+    color: #456990;
+    text-shadow: 2px 1px 1px #028090;
+}
+
+header h1::first-letter {
+    color: #F45B69;
+}
+
+section p::first-letter {
+    font-weight: bold;
 }
 
 h2 {
@@ -26,14 +45,53 @@ h2 {
     padding: 0;
     font-size: 30px;
     text-align: center;
-    color: #384D48;
+    color: #456990;
+}
+
+.navigation {
+    display: flex;
+    padding: 0;
+    background-color: #F45B69;
+}
+
+.navigation a {
+    
+    color: white;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li:nth-child(even) {
+    border-left: 2px solid#E4FDE1;
+    border-right: 2px solid #E4FDE1;
+}
+
+.navigation li:hover{
+    background-color: #E4FDE1;
+}
+
+br {
+    font-weight: bold;
+}
+
+li {
+    padding: 0 20px;
+    list-style: square; 
+}
+li a:hover {
+    text-decoration: dotted;
+    font-size: 22px;
+    color: #F45B69;    
 }
 
 p, li {
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 1px;
-    color: #384D48;
+    color: #456990;
 }   
 
 img {
@@ -43,6 +101,12 @@ img {
 }
 
 footer {
+    margin-top: 50px;
+}
+
+footer p {
+    border-bottom:3px solid #F45B69;
+    border-top: 3px solid #F45B69 ;
     text-align: center;
 }
 
@@ -51,3 +115,4 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
