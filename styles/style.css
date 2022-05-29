@@ -12,15 +12,15 @@ html {
         rgba(17,75,95,1) 0%, 
         rgba(2,128,144,1) 50%, 
         rgba(244,91,105,1) 100%);*/
-    background-color: #456990;
+    background-color: #BEB7A4;
 }
 
 body {
     width: 800px;
-    background-color: #E4FDE1;
+    background-color: #FFFFFC;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
-    border-radius: 7em;
+    border-radius: 1em;
 }
 
 h1 {
@@ -28,12 +28,12 @@ h1 {
     padding: 20px 0;
     font-size: 60px;
     text-align: center;
-    color: #456990;
-    text-shadow: 2px 1px 1px #028090;
+    color: #353A47;
+    /*text-shadow: 2px 2px 2px #F9DC5C;*/
 }
 
 header h1::first-letter {
-    color: #F45B69;
+    color: #353A47;
 }
 
 section p::first-letter {
@@ -45,18 +45,20 @@ h2 {
     padding: 0;
     font-size: 30px;
     text-align: center;
-    color: #456990;
+    color: #353A47;
 }
 
 .navigation {
     display: flex;
     padding: 0;
-    background-color: #F45B69;
+    background-color: #FFFFFC ;
+    border-block-end: 2px solid #353A47;
 }
 
 .navigation a {
     
-    color: white;
+    color: #353A47;
+    text-decoration: none;
 }
 
 .navigation li {
@@ -64,16 +66,12 @@ h2 {
 }
 
 .navigation li:nth-child(even) {
-    border-left: 2px solid#E4FDE1;
-    border-right: 2px solid #E4FDE1;
+    border-left: 2px solid#FFFFFC;
+    border-right: 2px solid #FFFFFC;
 }
 
 .navigation li:hover{
-    background-color: #E4FDE1;
-}
-
-br {
-    font-weight: bold;
+    background-color: #FFFFFC;
 }
 
 li {
@@ -83,7 +81,7 @@ li {
 li a:hover {
     text-decoration: dotted;
     font-size: 22px;
-    color: #F45B69;    
+    color: #E84855;    
 }
 
 p, li {
@@ -91,7 +89,7 @@ p, li {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 1px;
-    color: #456990;
+    color: #353A47;
 }   
 
 img {
@@ -105,8 +103,8 @@ footer {
 }
 
 footer p {
-    border-bottom:3px solid #F45B69;
-    border-top: 3px solid #F45B69 ;
+    border-bottom:3px solid #E84855;
+    border-top: 3px solid #E84855 ;
     text-align: center;
 }
 
