@@ -1,17 +1,21 @@
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
 html {
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
-    /*background: rgb(69,105,144);
-    background: linear-gradient(90deg, 
-        rgba(69,105,144,1) 0%,
-        rgba(228,253,225,1) 50%, 
-        rgba(244,91,105,1) 100%);
-    
-    /*background: rgb(17,75,95);
-    background: linear-gradient(90deg, 
-        rgba(17,75,95,1) 0%, 
-        rgba(2,128,144,1) 50%, 
-        rgba(244,91,105,1) 100%);*/
     background-color: #BEB7A4;
 }
 
@@ -26,24 +30,23 @@ body {
 h1 {
     margin: 0;
     padding: 20px 0;
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
     color: #353A47;
-    /*text-shadow: 2px 2px 2px #F9DC5C;*/
 }
 
 header h1::first-letter {
     color: #353A47;
 }
 
-section p::first-letter {
-    font-weight: bold;
+section p {
+    text-indent: 3rem;
 }
 
 h2 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 3rem;
     text-align: center;
     color: #353A47;
 }
@@ -59,6 +62,7 @@ h2 {
     
     color: #353A47;
     text-decoration: none;
+    font-size: 2rem;
 }
 
 .navigation li {
@@ -74,21 +78,38 @@ h2 {
     background-color: #FFFFFC;
 }
 
+.sight {
+    padding-bottom: 2rem;
+    border-bottom: 5px dotted #353A47;
+}
+
+ul {
+    padding-left: 3rem;
+}
+
 li {
     padding: 0 20px;
-    list-style: square; 
+    
 }
+main  li {
+    background-image: url(list.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    list-style: none;
+}
+
 li a:hover {
     text-decoration: dotted;
-    font-size: 22px;
+    font-size: 2.5rem;
     color: #E84855;    
 }
 
-p, li {
+p, li, ul {
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.6rem;
     line-height: 2;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     color: #353A47;
 }   
 
@@ -103,9 +124,12 @@ footer {
 }
 
 footer p {
-    border-bottom:3px solid #E84855;
-    border-top: 3px solid #E84855 ;
+    text-decoration: overline #3185FC 5px;
     text-align: center;
+}
+
+footer span {
+    text-decoration: underline #F9DC5C 5px;
 }
 
 .sights {
