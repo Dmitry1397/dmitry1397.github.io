@@ -16,17 +16,28 @@ textarea {
 html {
     font-size: 10px;
     font-family: 'Oswald', sans-serif;
+    height: 100%;
 }
 
 body {
     background-color: #FFFFFC;
     margin: 0 auto;
+    height: 100%;
 }
 
-h1 {
+.bg {
+    background-image: url(../images/artem-zhukov-CgMRWu-N7ms-unsplash.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+}
+.bg h1 {
     margin: 0 auto;
     padding: 1rem 0;
-    font-size: 5rem;
+    font-size: 10rem;
     text-align: center;
     color: #fff;
 }
@@ -47,6 +58,13 @@ h2 {
 .navigation {
     display: flex;
     justify-content: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #88847C;
 }
 
 .navigation ul{
