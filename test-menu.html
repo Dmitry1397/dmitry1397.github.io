@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/fix-navbar.js" defer></script>
         <title>Kyiv page</title>
     </head>
@@ -18,20 +18,17 @@
         <header>
             <h1>Київ - це серце України</h1>
             <nav class="navigation" id="navbar">
-                <ul>
-                    <li class="nav">
+                
                     <a href="index.html">Головна</a>
-                    </li>
-                    <li class="nav">
+                
+                
                     <a href="sights.html">Місця</a>
-                    </li>
-                    <li class="nav">
-                    <a href="#">Зображення</a>
-                    </li>
-                    <li class="nav">
+                <a href="#">Зображення</a>
                     <a href="map.html">Київ на мапі</a>    
-                    </li>
-                </ul>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                
             </nav>
         </header>    
         <div>
@@ -77,11 +74,11 @@
         </footer>
         <script>
             function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
+              var x = document.getElementById("navbar");
+              if (x.className === "navigation") {
                 x.className += " responsive";
               } else {
-                x.className = "topnav";
+                x.className = "navigation";
               }
             }
             </script>
