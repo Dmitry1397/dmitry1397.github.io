@@ -72,7 +72,14 @@ h1 {
     padding: 1rem 0;
     font-size: 5rem;
     text-align: center;
+    text-shadow: 2px 2px 2px #88847C;
     color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .bg h1 {
+        font-size: 7rem;
+    }
 }
 
 section p {
@@ -137,6 +144,29 @@ h2 {
 nav a[href="#"] {
     color: #F9DC5C;
     font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+       margin: 0;
+    }
+    .navigation {
+       display: flex;
+   }
+
+     .nav a {
+       padding: 0;
+     }
+
+     .navigation ul {
+       letter-spacing: 0;
+
+     }
+
+     .navigation a {
+       letter-spacing: 0;
+       font-size: 2rem;
+     }
 }
 
 /* Grid view of sights */
@@ -265,7 +295,10 @@ header {
     width: 80%;
     max-width: 90rem;
     margin: 0 auto;
+}
 
+.container iframe {
+    width: 100%;
 }
 
 
@@ -298,8 +331,14 @@ header {
     font-size: 3rem;
 }
 
-@media screen and (max-width: 700px) {
-     .nav {
-        margin: 0 auto;
-     }
+@media screen and (max-width: 600px) {
+    .pictures {
+        height: 25rem;
+    }
+
+    .pictures h2 {
+        font-size: 2rem;
+    }
 }
+
+
