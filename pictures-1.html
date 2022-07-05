@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        
+        <script src="scripts/fix-navbar.js" defer></script>
+        <script src="scripts/sights.js" defer></script>
+
+        <title>Kyiv page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Київ - це серце України</h1>
+            <nav class="navigation" id="navbar">
+                <ul>
+                    <li class="nav">
+                    <a href="index.html">Головна</a>
+                    </li>
+                    <li class="nav">
+                    <a href="sights.html">Місця</a>
+                    </li>
+                    <li class="nav">
+                    <a href="#">Зображення</a>
+                    </li>
+                    <li class="nav">
+                    <a href="map.html">Київ на мапі</a>    
+                    </li>
+                </ul>
+            </nav>
+        </header>    
+        <div id="container">
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/motherland.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Батьківщина-Мати</h2>
+                <div class="description">
+                    <p>Батьківщина-мати — популярне місце в Києві, яке є грандіозним монументом, зведеним на правобережжі Дніпра в 1981 році. 
+                    Це шістнадцятий за своєю висотою пам’ятник світу. Пам'ятник присвячений героям Великої Вітчизняної війни. 
+                    Він вражає своїми величезними розмірами і оточений мальовничим парком, в якому із задоволенням гуляють дорослі і діти. 
+                    Крім того, тут можна відвідати цікаву музейну експозицію про історичні факти військових діях 1941-1945 років.</p>
+                </div>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/andriivsky.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Андріївський узвіз</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/kostel.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Миколаївський костел</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/mariinsky.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Маріїнський палац</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/sofiivsky.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Софіївський собор</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/vozdvyzhenka.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Воздвиженка</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/peisaghna.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Пейзажна алея</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/volodumurska.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Володимирська гірка, фунікулер, пішохідний міст</h2>
+            </div>
+            <div class="pictures" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)),
+            url(images/uspensky.jpg) center center / 100% 100% no-repeat">
+                <h2 class="logo">Успенський собор</h2>
+            </div>
+        </div>
+        <footer>
+            <p class="footer"><span>Dmytro Yushchyk</span></p>
+        </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+</html>
+

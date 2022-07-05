@@ -311,7 +311,7 @@ header {
     margin: 0 auto;
 }
 
-.pictures {
+.flip-box {
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -319,7 +319,66 @@ header {
     margin: 2rem auto;
     width: 80rem;
     height: 50rem;
-    background-color: #F9DC5C;
+    background-color: #88847C;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-box-front h2 {
+    color: #fff;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+}
+
+.flip-box-front img {
+    max-width: 100%;
+}
+
+.flip-box-back {
+    transform: rotateX(180deg);
+}
+
+.flip-box-back h2 {
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.flip-box-back p {
+    color: #fff;
+    margin: 3rem;
+    font-size: 1.8rem;
+}
+
+.flip-box-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .pictures:hover {
@@ -327,11 +386,6 @@ header {
     box-shadow: 2px 2px 30px #88847C;
     text-decoration: underline #fff;
     text-underline-offset: 5px;
-}
-
-.pictures h2 {
-    color: #fff;
-    font-size: 3rem;
 }
 
 @media screen and (max-width: 600px) {
