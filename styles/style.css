@@ -397,8 +397,9 @@ header {
 
     .flip-box-back p {
         color: #fff;
-        margin: 2.5rem;
+        margin: 2rem;
         font-size: 1.6rem;
+        line-height: 1.6;
     }
 }
 
