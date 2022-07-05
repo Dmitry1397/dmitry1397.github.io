@@ -105,6 +105,7 @@ h2 {
     top: 0;
     width: 100%;
     background: #88847C;
+    transition: top 0.5s;
 }
 
 .navigation ul{
@@ -389,12 +390,15 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    .pictures {
-        height: 25rem;
+    .flip-box {
+        height: 100vh;
+        background-size: cover;
     }
 
-    .pictures h2 {
-        font-size: 2rem;
+    .flip-box-back p {
+        color: #fff;
+        margin: 2.5rem;
+        font-size: 1.6rem;
     }
 }
 
