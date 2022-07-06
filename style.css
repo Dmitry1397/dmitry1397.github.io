@@ -1,0 +1,200 @@
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: #FFFFFC;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.lineUp {
+
+    animation: 2s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+/*footer*/
+footer {
+    margin: 5rem auto;
+    width: 80%;
+}
+
+
+.footer {
+    -webkit-text-decoration: overline #3185FC 4px;
+    text-decoration: overline #3185FC 4px;
+    text-align: center;
+}
+
+.footer span {
+    -webkit-text-decoration: underline #F9DC5C 4px;
+    text-decoration: underline #F9DC5C 4px;
+    -webkit-text-underline-offset: 3px;
+    text-underline-offset: 3px;
+    padding-bottom: 5rem;
+}
+
+
+p {
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 0.2rem;
+    color: #353A47;
+}   
+
+.bgimg-1 {
+    background-image: url(header.jpg);
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url(motherland.jpg);
+    min-height: 100%;
+}
+
+.bgimg-3 {
+    background-image: url(andr.jpg);
+    min-height: 100%;
+}
+
+.bgimg-4 {
+    background-image: url(kostel.jpg);
+    min-height: 100%;
+}
+
+.bgimg-5 {
+    background-image: url(mariinsky.jpg);
+    min-height: 100%;
+}
+
+.bgimg-6 {
+    background-image: url(sofiivsky1.jpg);
+    min-height: 100%;
+}
+
+.bgimg-7 {
+    background-image: url(vozdvyzhenka.jpg);
+    min-height: 100%;
+}
+
+.bgimg-8 {
+    background-image: url(peisaghna.jpg);
+    min-height: 100%;
+}
+
+.bgimg-9 {
+    background-image: url(volodumurska.jpg);
+    min-height: 100%;
+}
+
+.bgimg-10 {
+    background-image: url(uspensky.jpg);
+    min-height: 100%;
+}
+
+.bgimg-last {
+    background-image: url(last.jpg);
+    min-height: 100%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3,
+.bgimg-4, .bgimg-5, .bgimg-6,
+.bgimg-7, .bgimg-8, .bgimg-9,
+.bgimg-10, .bgimg-last {
+    /* The image used */
+    
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+}
+.caption h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 15rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #88847C;
+}
+
+.caption h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 8rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #88847C;
+}
+.description p {
+    padding: 10rem;
+    font-size: 1.8rem;
+    background: rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .caption h1 {
+        font-size: 5rem;
+    }
+
+    .caption h2{
+        font-size: 4rem;
+    }
+
+    .description p {
+        padding: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .description::first-letter {
+        font-weight: bold;
+    }
+
+    .bgimg-1 {
+        background-image: url(port.jpg);
+    }
+
+    .bgimg-6 {
+        background-image: url(sofiivsky-mobile1.jpg);
+    }
+}
+
+
