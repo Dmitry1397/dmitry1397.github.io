@@ -188,6 +188,15 @@ p {
         font-weight: bold;
     }
 
+    .bgimg-1, .bgimg-2, .bgimg-3,
+    .bgimg-4, .bgimg-5, .bgimg-6,
+    .bgimg-7, .bgimg-8, .bgimg-9,
+    .bgimg-10, .bgimg-last {
+    /* The image used */
+    
+    background-attachment: scroll;
+}
+
     .bgimg-1 {
         background-image: url(port.jpg);
     }
