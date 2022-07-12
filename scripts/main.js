@@ -95,6 +95,7 @@ function displaySight(index) {
     title.textContent = sights[index].title;
     myPara.textContent = sights[index].description;
     img.setAttribute('src', sights[index].src);
+    document.querySelector('title').textContent = sights[index].title;
 }
 
 function getCurrentIndex() {
