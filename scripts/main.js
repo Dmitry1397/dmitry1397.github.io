@@ -97,40 +97,38 @@ function displaySight(index) {
     img.setAttribute('src', sights[index].src);
 }
 
-function clickRight() {
+function getCurrentIndex() {
     let current = title.textContent;
     let currentIndex;
     for (sight of sights) {
         if (current === sight.title) {
-            currentIndex = sights.indexOf(sight) + 1;
-            if (currentIndex === sights.length) {
-                currentIndex = 0;
-            }
+            currentIndex = sights.indexOf(sight)
         }
     }
+    return currentIndex;
+}
 
-    displaySight(currentIndex);
+function clickRight() {
+    let index = getCurrentIndex() + 1;
+        if (index === sights.length) {
+            index = 0;
+        }
+    displaySight(index);
 }
 
 function clickLeft() {
-    let current = title.textContent;
-    let currentIndex;
-    for (sight of sights) {
-        if (current === sight.title) {
-            currentIndex = sights.indexOf(sight) - 1;
-            if (currentIndex === -1) {
-                currentIndex = sights.length - 1;
-            }
+    let index = getCurrentIndex() - 1;
+        if (index === -1) {
+            index = sights.length - 1;
         }
-    }
-
-    displaySight(currentIndex);
+    displaySight(index);
 }
 
 right.addEventListener('click', clickRight);
 left.addEventListener('click', clickLeft);
 
+
 generateSights();
-displaySight(random());
+displaySight(0)
 
 
