@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="scripts/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="left">
+        <img src="" alt="" id="img">
+        <div class="left-arrow">
+            
+                <
+            
+        </div>
+        
+        <div class="centered">
+            <h2 id="title"></h2>
+        </div>
+        
+        <div class="right-arrow">
+            
+                >
+            
+        </div>
+    </div>
+    <div class="right">
+        <div class="container">
+        <p class="description" id="description">
+        
+        </p>
+        </div>
+    </div>
+
+    <script>
+
+fetch('sight.json') 
+.then(response => {
+    if(!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+    }
+    return response.json();
+})
+.then(json => initialize(json))
+
+.catch(error => console.error(`Fetch problem: ${error.message}`));
+        
+function initialize(sights) {
+    function displaySight(index) {
+
+    title.textContent = sights[index].title;
+    myPara.textContent = sights[index].description;
+    img.setAttribute('src', sights[index].src);
+    document.querySelector('title').textContent = sights[index].title;
+    }
+
+    displaySight(0);
+}
+
+        
+    </script>
+</body>
+</html>
